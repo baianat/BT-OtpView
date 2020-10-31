@@ -1,5 +1,5 @@
 PODS:
-  - BT-OtpView (0.1.0)
+  - BT-OtpView (0.1.2)
 
 DEPENDENCIES:
   - BT-OtpView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BT-OtpView: 32661056a0f10e8887d4645ecabc9f2ffc53ff60
+  BT-OtpView: 19f8d4923074707734e91ff4093f24b6c68f2689
 
 PODFILE CHECKSUM: c4a8ec37240c44083c1ce017b37016b9797f57d5
 
