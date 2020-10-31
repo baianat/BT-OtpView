@@ -1,0 +1,16 @@
+PODS:
+  - BT-OtpView (0.1.0)
+
+DEPENDENCIES:
+  - BT-OtpView (from `../`)
+
+EXTERNAL SOURCES:
+  BT-OtpView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BT-OtpView: 32661056a0f10e8887d4645ecabc9f2ffc53ff60
+
+PODFILE CHECKSUM: c4a8ec37240c44083c1ce017b37016b9797f57d5
+
+COCOAPODS: 1.9.3

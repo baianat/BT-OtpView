@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtpView" customModule="BT_OtpView" customModuleProvider="target">
+            <connections>
+                <outlet property="firstContainer" destination="YhR-3y-2M7" id="vIV-OX-jm0"/>
+                <outlet property="firstField" destination="7Ks-js-MAv" id="cGT-o1-gaE"/>
+                <outlet property="fourthContainer" destination="lWy-XM-d9N" id="SV6-VC-7g3"/>
+                <outlet property="fourthField" destination="WfV-T4-eTx" id="LqL-y0-2jK"/>
+                <outlet property="secondContainer" destination="0gr-oQ-MUw" id="LBz-1J-6V1"/>
+                <outlet property="secondField" destination="y86-lg-Ayb" id="9vB-7t-CJP"/>
+                <outlet property="thirdContainer" destination="CY1-my-P4M" id="ixt-1i-yR4"/>
+                <outlet property="thirdField" destination="vTe-Q4-6bV" id="h1b-c0-syI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="575" height="308"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KsS-ZM-90N">
+                    <rect key="frame" x="0.0" y="0.0" width="575" height="308"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="999" translatesAutoresizingMaskIntoConstraints="NO" id="uHo-T9-IE0">
+                            <rect key="frame" x="0.0" y="0.0" width="575" height="82"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="qZg-uT-S9c">
+                            <rect key="frame" x="0.0" y="82" width="575" height="144"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhR-3y-2M7">
+                                    <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ks-js-MAv" customClass="OtpTextField" customModule="BT_OtpView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                                            <color key="tintColor" name="primaryDark"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="7Ks-js-MAv" firstAttribute="top" secondItem="YhR-3y-2M7" secondAttribute="top" id="3XI-fN-F7A"/>
+                                        <constraint firstItem="7Ks-js-MAv" firstAttribute="leading" secondItem="YhR-3y-2M7" secondAttribute="leading" id="BSw-7B-YfH"/>
+                                        <constraint firstAttribute="width" secondItem="YhR-3y-2M7" secondAttribute="height" id="XaV-3J-VT6"/>
+                                        <constraint firstAttribute="trailing" secondItem="7Ks-js-MAv" secondAttribute="trailing" id="Z1O-bn-k8J"/>
+                                        <constraint firstAttribute="bottom" secondItem="7Ks-js-MAv" secondAttribute="bottom" id="soX-ot-bHA"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="BorderColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ygU-sK-RYe" userLabel="FillerView">
+                                    <rect key="frame" x="144" y="0.0" width="0.0" height="144"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gr-oQ-MUw">
+                                    <rect key="frame" x="144" y="0.0" width="143.5" height="144"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y86-lg-Ayb" customClass="OtpTextField" customModule="BT_OtpView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="143.5" height="144"/>
+                                            <color key="tintColor" name="primaryDark"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="y86-lg-Ayb" secondAttribute="trailing" id="2NA-JW-ETF"/>
+                                        <constraint firstItem="y86-lg-Ayb" firstAttribute="top" secondItem="0gr-oQ-MUw" secondAttribute="top" id="6Gq-hb-LwF"/>
+                                        <constraint firstItem="y86-lg-Ayb" firstAttribute="leading" secondItem="0gr-oQ-MUw" secondAttribute="leading" id="LHS-lq-GEO"/>
+                                        <constraint firstAttribute="bottom" secondItem="y86-lg-Ayb" secondAttribute="bottom" id="q9l-K6-gef"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="BorderColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="KMT-o5-2Ie" userLabel="FillerView">
+                                    <rect key="frame" x="287.5" y="0.0" width="0.0" height="144"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CY1-my-P4M">
+                                    <rect key="frame" x="287.5" y="0.0" width="144" height="144"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vTe-Q4-6bV" customClass="OtpTextField" customModule="BT_OtpView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                                            <color key="tintColor" name="primaryDark"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="vTe-Q4-6bV" firstAttribute="top" secondItem="CY1-my-P4M" secondAttribute="top" id="5pT-VG-Euf"/>
+                                        <constraint firstItem="vTe-Q4-6bV" firstAttribute="leading" secondItem="CY1-my-P4M" secondAttribute="leading" id="Ode-wL-DhX"/>
+                                        <constraint firstAttribute="bottom" secondItem="vTe-Q4-6bV" secondAttribute="bottom" id="aEg-G1-Sj7"/>
+                                        <constraint firstAttribute="trailing" secondItem="vTe-Q4-6bV" secondAttribute="trailing" id="qzb-hW-ydS"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="BorderColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="aLb-XX-Fad" userLabel="FillerView">
+                                    <rect key="frame" x="431.5" y="0.0" width="0.0" height="144"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWy-XM-d9N">
+                                    <rect key="frame" x="431.5" y="0.0" width="143.5" height="144"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-T4-eTx" customClass="OtpTextField" customModule="BT_OtpView" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="143.5" height="144"/>
+                                            <color key="tintColor" name="primaryDark"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="WfV-T4-eTx" secondAttribute="bottom" id="2ZV-Ai-NId"/>
+                                        <constraint firstItem="WfV-T4-eTx" firstAttribute="top" secondItem="lWy-XM-d9N" secondAttribute="top" id="KRl-lG-vUI"/>
+                                        <constraint firstAttribute="trailing" secondItem="WfV-T4-eTx" secondAttribute="trailing" id="Smy-iC-wfz"/>
+                                        <constraint firstItem="WfV-T4-eTx" firstAttribute="leading" secondItem="lWy-XM-d9N" secondAttribute="leading" id="mmG-qy-Jc6"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="BorderColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="YhR-3y-2M7" firstAttribute="width" relation="lessThanOrEqual" secondItem="qZg-uT-S9c" secondAttribute="width" multiplier="0.25" id="0wk-9O-Swd"/>
+                                <constraint firstItem="0gr-oQ-MUw" firstAttribute="width" secondItem="YhR-3y-2M7" secondAttribute="width" id="8qd-VF-Bw3"/>
+                                <constraint firstItem="KMT-o5-2Ie" firstAttribute="width" secondItem="ygU-sK-RYe" secondAttribute="width" id="HCF-er-XLN"/>
+                                <constraint firstItem="CY1-my-P4M" firstAttribute="width" secondItem="YhR-3y-2M7" secondAttribute="width" id="hUf-zA-bOI"/>
+                                <constraint firstItem="aLb-XX-Fad" firstAttribute="width" secondItem="ygU-sK-RYe" secondAttribute="width" id="tSl-D5-tgN"/>
+                                <constraint firstItem="lWy-XM-d9N" firstAttribute="width" secondItem="YhR-3y-2M7" secondAttribute="width" id="zZD-3S-W3d"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" verticalHuggingPriority="999" translatesAutoresizingMaskIntoConstraints="NO" id="e9D-vJ-aaX">
+                            <rect key="frame" x="0.0" y="226" width="575" height="82"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="qZg-uT-S9c" firstAttribute="height" secondItem="KsS-ZM-90N" secondAttribute="height" priority="998" id="3Lh-t4-Zo0"/>
+                        <constraint firstItem="e9D-vJ-aaX" firstAttribute="height" secondItem="uHo-T9-IE0" secondAttribute="height" id="iwV-aw-boh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KsS-ZM-90N" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QyT-gM-nDm"/>
+                <constraint firstItem="KsS-ZM-90N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="acX-yY-wv3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KsS-ZM-90N" secondAttribute="bottom" id="o7X-7S-8PF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KsS-ZM-90N" secondAttribute="trailing" id="yG4-t4-F3n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="274.39999999999998" y="115.14242878560721"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BorderColor">
+            <color red="0.875" green="0.86299997568130493" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryDark">
+            <color red="0.13300000131130219" green="0.090000003576278687" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
