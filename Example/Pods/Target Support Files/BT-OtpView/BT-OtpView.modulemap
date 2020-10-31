@@ -1,6 +1,0 @@
-framework module BT_OtpView {
-  umbrella header "BT-OtpView-umbrella.h"
-
-  export *
-  module * { export * }
-}

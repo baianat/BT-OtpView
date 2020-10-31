@@ -1,6 +1,0 @@
-framework module Pods_BT_OtpView_Tests {
-  umbrella header "Pods-BT-OtpView_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
